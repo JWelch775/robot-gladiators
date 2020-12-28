@@ -81,7 +81,7 @@ var fight = function(enemyName)
     var startGame = function()
         {
             playerHealth = 100;
-            
+            playerAttack = 25;
             playerMoney = 10;
 
             for(var i = 0; i < enemyNames.length; i++)
@@ -170,10 +170,10 @@ var fight = function(enemyName)
                             if(playerMoney >= 7)
                                 {
                                     window.alert("Upgrading player's attack by 6 for $7");
-                                    console.log("playerAttack = " + playerAttack)
                                     //increase attack and decrease money
                                     playerAttack = playerAttack + 6;
                                     playerMoney = playerMoney - 7;
+                                    console.log("playerAttack = " + playerAttack)
                                 }
                             else
                                 {
